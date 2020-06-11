@@ -27,7 +27,7 @@ public class homePageSteps extends Base {
 
 	    @Then("^(.+) is displayed$")
 	    public void is_displayed(String vegitable) throws Throwable {
-	    	System.out.println(homepage.getsearchresult().getText());
+	    	//System.out.println(homepage.getsearchresult().getText());
 	      Assert.assertTrue(homepage.getsearchresult().getText().contains(vegitable));
 	    }
 }
