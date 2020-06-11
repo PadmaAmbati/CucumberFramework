@@ -1,0 +1,195 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-11T08:34:46.576Z",
+        "line": 12,
+        "name": "validate search functionality",
+        "description": "",
+        "id": "validating-search--and-add-vegitables-functionality;validate-search-functionality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 70000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.afterscenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7002000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Greencart home page",
+            "match": {
+              "location": "stepDefinitions.homePageSteps.user_is_on_greencart_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2176000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter the Cucumber in serachbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.homePageSteps.user_enter_the_in_serachbox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Cucumber is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinitions.homePageSteps.is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-11T08:34:56.023Z",
+        "line": 24,
+        "name": "validate adding vegitables to cart",
+        "description": "",
+        "id": "validating-search--and-add-vegitables-functionality;validate-adding-vegitables-to-cart;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 54000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.afterscenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6015000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is on Greencart home page",
+            "match": {
+              "location": "stepDefinitions.homePageSteps.user_is_on_greencart_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2187000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User enter the Cucumber in serachbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.homePageSteps.user_enter_the_in_serachbox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Cucumber is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinitions.homePageSteps.is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Add the vegitable to cart",
+            "match": {
+              "location": "stepDefinitions.cartPageSteps.add_the_vegitable_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click onCartBag",
+            "match": {
+              "location": "stepDefinitions.cartPageSteps.click_oncartbag()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "added Cucumber is present in cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 6
+                }
+              ],
+              "location": "stepDefinitions.cartPageSteps.added_is_present_in_cart(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "validating Search  and add vegitables functionality",
+    "description": "",
+    "id": "validating-search--and-add-vegitables-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/home.feature",
+    "tags": []
+  }
+]

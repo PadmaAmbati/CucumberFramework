@@ -1,0 +1,19 @@
+Feature: validating Search  and add vegitables functionality 
+
+
+
+Scenario Outline: validate search functionality
+Given User is on Greencart home page
+When User enter the <vegitable> in serachbox
+Then <vegitable> is displayed
+
+Examples:
+|vegitable|
+|cucumber|
+
+Scenario Outline: validate adding vegitables to cart
+Given User is on Greencart home page
+When User enter the <vegitable> in serachbox
+Then <vegitable> is displayed
+And Add the <vegitable> to cart
+Then added <vegitable> is present in cart

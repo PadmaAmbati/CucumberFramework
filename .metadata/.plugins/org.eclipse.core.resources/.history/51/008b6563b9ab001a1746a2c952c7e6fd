@@ -1,0 +1,15 @@
+package stepDefinitions;
+
+import org.openqa.selenium.WebDriver;
+
+import Cucumber.FirstProject.Base;
+import io.cucumber.java.After;
+
+public class Hooks extends Base{
+	
+	WebDriver driver=Base.initilizeDriver();
+	@After
+	public void afterscenario(){
+		driver.close();
+	}
+}

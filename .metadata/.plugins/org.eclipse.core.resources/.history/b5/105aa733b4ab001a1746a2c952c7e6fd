@@ -1,0 +1,19 @@
+package stepDefinitions;
+
+import Cucumber.FirstProject.Base;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+
+public class cartPageSteps extends Base{
+	
+	
+	@Then("^added (.+) is present in cart$")
+    public void added_is_present_in_cart(String vegitable) throws Throwable {
+        
+    }
+
+    @And("^Add the (.+) to cart$")
+    public void add_the_to_cart(String vegitable) throws Throwable {
+        
+    }
+}

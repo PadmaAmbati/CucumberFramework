@@ -1,0 +1,11 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+
+public class homePageObjects {
+	
+	
+	private By search=By.xpath("//input[@type='search']");
+	private By additem=By.xpath("//button[contains(text(),'ADD TO CART')]");
+	
+}

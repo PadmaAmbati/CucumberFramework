@@ -1,0 +1,22 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class cartPageObjects {
+	public WebDriver driver;
+	private By addcartButton=By.xpath("//button[contains(text(),'ADD TO CART')]");
+	private By clickOnCartBag=By.xpath("//img[@alt='Cart']");
+	
+	
+	public  cartPageObjects(WebDriver driver){
+		this.driver=driver;
+	}
+	public WebElement getsearch(){
+		return driver.findElement(addcartButton);
+	}
+	public WebElement getsearchresult(){
+		return driver.findElement(clickOnCartBag);
+	}
+}

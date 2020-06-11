@@ -1,0 +1,27 @@
+package Cucumber.FirstProject;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Base {
+	
+	public static WebDriver driver;
+	Properties prop;
+	public static WebDriver initilizeDriver() throws IOException{
+		
+		FileInputStream fis=new FileInputStream("");
+		 prop=new Properties();
+		prop.load(fis);
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\java\\resources\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+		return driver;
+		
+	}
+
+}

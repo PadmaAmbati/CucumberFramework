@@ -1,0 +1,12 @@
+package Cucumber.Options;
+
+
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="src\\test\\java\\features",
+				plugin="json:target/jsonReports/cucumber-report.json",
+				//tags="@test",
+				glue="stepDefinitions")
+public class TestRunner{
+
+}

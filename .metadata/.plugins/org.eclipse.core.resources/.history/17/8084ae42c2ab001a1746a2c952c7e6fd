@@ -1,0 +1,17 @@
+package Cucumber.Options;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="src\\test\\java\\features",
+				monochrome=true,
+				plugin={"json:target/cucumber-report.json"},
+				glue="stepDefinitions")
+public class TestRunner extends AbstractTestNGCucumberTests{
+
+}

@@ -1,0 +1,22 @@
+package stepDefinitions;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class homePageSteps {
+	 @Given("^User is on Greencart home page$")
+	    public void user_is_on_greencart_home_page() throws Throwable {
+	        
+	    }
+
+	    @When("^User enter the (.+) in serachbox$")
+	    public void user_enter_the_in_serachbox(String vegitable) throws Throwable {
+	        
+	    }
+
+	    @Then("^(.+) is displayed$")
+	    public void is_displayed(String vegitable) throws Throwable {
+	       
+	    }
+}
